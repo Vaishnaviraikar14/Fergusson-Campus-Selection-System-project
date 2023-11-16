@@ -1,0 +1,96 @@
+	{% load static %}
+
+{% block body %}
+
+{% include 'navigation.html' %}
+
+<style>
+    .container{
+    max-width : 90%
+    }
+
+    .content{
+    text-align : center;
+    position:absolute;
+    bottom:0;
+    background:rgba(0,0,0,0.5);
+    color : white;
+    height:30px;
+    width:91%
+    }
+</style>
+
+<div class="container-fliud" style="margin-top:1%">
+    <img src="{% static 'images/clg.jpg' %}" style = "height:450px;width:100%">
+
+</div>
+
+<div class="container" style = "background-color : black ; height:570px ; margin-top:2%">
+<h1 class="text-center text-white">----------| Campus Campanies |----------</h1>
+
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <img src="{% static 'images/josh.jpeg' %}" style="width:100% ; margin-top:5% ; height : 200px ; border-radius:50%">
+            <div class="content" >
+            <p>Josh</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/Veritas.jpeg' %}" style="width:100% ; margin-top:5% ; height : 200px ; border-radius:50%">
+            <div class="content" >
+            <p>Veritas</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/tech prescient.jpeg' %}" style="width:100% ; margin-top:5% ; height : 200px ; border-radius:50%">
+            <div class="content" >
+            <p>Tech Prescient</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/springct.jpeg' %}" style="width:100% ; margin-top:5% ; height : 200px ; border-radius:50%">
+            <div class="content" >
+            <p>SPRINGCT</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <img src="{% static 'images/bluepinapple.jpeg' %}" style="width:100% ; margin-top:5% ; height : 200px ; border-radius:50%">
+            <div class="content" >
+            <p>Bluepinapple</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/axtria.jpeg' %}" style="width:100% ; margin-top:5% ; height : 200px ; border-radius:50%">
+            <div class="content" >
+            <p>Axtria</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/ellicium.jpeg' %}" style="width:100% ; margin-top:5% ; height : 200px ; border-radius:50%">
+            <div class="content" >
+            <p>Ellicium</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/tata motors.jpeg' %}" style="width:100% ; margin-top:5% ; height : 200px ; border-radius:50%">
+            <div class="content" >
+            <p>Tata Motors</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% include 'footer.html' %}
+
+{% endblock%}
